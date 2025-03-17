@@ -42,7 +42,43 @@
         - Key 'o' creates a new line AND ENTER `Insert Mode`.
         - Key 'u' undos the previous command, and `Ctrl+r` is redo.
         - 'yy' copies the whole current line, 'dd' is cut and 'p' is paste.
+        - `:1` goes to line 1, `:20` goes to line 20, etc.
+        - `/abc` searches for keyword 'abc', use 'n' to search next and 'N' to search previous. 
         - See `https://vim.rtorr.com/` for more info.
     - Be careful with your CAPS LOCK and CHINESE INPUT METHODS!
 
+## Zsh
+
+- `pacman -Ss zsh`
+- `pacman -S zsh`
+
+- Zsh is a bit hard to configure, use [Oh My Zsh](https://ohmyz.sh/#install)
+    - In case the website is blocked, use [Zsh Wiki](https://github.com/ohmyzsh/ohmyzsh/wiki) instead.
+    - After installation, you can use `exit` or `Ctrl+d` to exit zsh.
+
+- Give it a try
+    - Initially, Make sure you are not in zsh.
+    - `ls /d`
+    - `zsh`
+    - `ls /d`
+    - `exit`
+    - Check the difference between two `ls`s.
+
+- Now we are going to use the previously installed `Vim` to edit Zsh configurations.
+    - Before you edit existing file, give it a backup.
+    - Now we are going to edit `~/.zshrc`
+        - So we first execute `cp ~/.zshrc ~/.zshrc.backup`
+        - Once we want to roll back, execute `cp ~/.zshrc.backup ~/.zshrc`
+    - `vim ~/.zshrc`
+        - Find `ZSH_THEME="xxx"`
+        - Replace that with `ZSH_THEME="clean"`
+        - Save and quit. (Remember howto?)
+    - Now enter zsh again and try.
+        - If you are already in zsh, you can exit and zsh again
+        - Another way to flush without exit is `. ~/.zshrc`
+
+## Tmux
+
+- `pacman -Ss tmux`
+- `pacman -S tmux`
 
