@@ -82,3 +82,23 @@
 - `pacman -Ss tmux`
 - `pacman -S tmux`
 
+- Now we are going to edit `~/.tmux.conf` as follows
+
+```
+# Lines begins with '#' are comments.
+# Add or remove them won't cause any effects.
+
+set -g prefix C-a  # Use Ctrl-a instead of Ctrl-b (default) as key 'a' is near to key 'Ctrl'
+set -g default-shell /usr/bin/zsh  # Use zsh as default shell. Check `which zsh`
+```
+
+- Try tmux
+    - `tmux`
+    - `Ctrl-a` then `%`
+    - `Ctrl-a` then `"`
+    - `Ctrl-a` then Up / Down / Left / Right
+    - Use `exit` or `Ctrl-d` to kill one
+    - `Ctrl-a` then `c` to create a new page, you can see page list on bottom.
+    - `Ctrl-a` then `0` switch to page 0, better not exceed 9!
+    - `Ctrl-a` then `d` detach, and `tmux a` back.
+	- See `https://github.com/tmux/tmux/wiki/Getting-Started` for more info.
