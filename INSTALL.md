@@ -118,3 +118,16 @@ set -g default-shell /usr/bin/zsh  # Use zsh as default shell. Check `which zsh`
 - `pacman -S mingw-w64-ucrt-x86_64-python`
 - `pacman -S mingw-w64-ucrt-x86_64-python-numpy`
 - `pacman -S mingw-w64-ucrt-x86_64-python-ipython`
+
+- Now give it a try!
+	- `ipython`
+	- `100 + 3`
+	- `100 - 3`
+	- `100 * 3`
+	- `100 / 3`
+	- `100 ** 3`
+	- `100 // 3`
+	- `100 % 3`
+		- This is modulo operator
+		- `a % b` is `a - (a // b) * b`
+	- Ends with `exit` or `Ctrl-d`
