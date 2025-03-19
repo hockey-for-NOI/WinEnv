@@ -3,11 +3,11 @@
 ## MSYS2
 
 - [MSYS2 Website](https://www.msys2.org/)
-    - After Installation, Search `MSYS2 MSYS` in your `Start Menu`
+    - After Installation, Search `MSYS2 UCRT64` in your `Start Menu`
     - Right Click --> Open File Position --> Copy to Desktop
     - Right Click the copied icon --> Properties
-    - The `Target` should point to somewhere like `C:\msys64\msys2.exe`
-    - Try if you can open `MSYS2 MSYS`
+    - The `Target` should point to somewhere like `C:\msys64\ucrt64.exe`
+    - Try if you can open `MSYS2 UCRT64`
 
 - Give it a try
     - `ls /c`
@@ -46,6 +46,15 @@
         - `/abc` searches for keyword 'abc', use 'n' to search next and 'N' to search previous. 
         - See `https://vim.rtorr.com/` for more info.
     - Be careful with your CAPS LOCK and CHINESE INPUT METHODS!
+
+## Git
+
+- `pacman -Ss git`
+- `pacman -S git`
+
+- We install git here only for `oh-my-zsh`
+	- Git is too complex to introduce here.
+	- See `https://git-scm.com/docs/gittutorial` for more information.
 
 ## Zsh
 
@@ -102,3 +111,10 @@ set -g default-shell /usr/bin/zsh  # Use zsh as default shell. Check `which zsh`
     - `Ctrl-a` then `0` switch to page 0, better not exceed 9!
     - `Ctrl-a` then `d` detach, and `tmux a` back.
 	- See `https://github.com/tmux/tmux/wiki/Getting-Started` for more info.
+
+
+## Python
+
+- `pacman -S mingw-w64-ucrt-x86_64-python`
+- `pacman -S mingw-w64-ucrt-x86_64-python-numpy`
+- `pacman -S mingw-w64-ucrt-x86_64-python-ipython`
